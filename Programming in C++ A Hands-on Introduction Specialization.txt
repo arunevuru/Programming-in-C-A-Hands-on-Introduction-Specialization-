@@ -1,0 +1,2522 @@
+C++ Basics: Selection and Iteration 
+
+
+Week 1
+
+QUE1
+bool my_bool = true;
+cout << my_bool << endl;
+my_bool = test;
+cout << my_bool << endl;
+
+
+QUE2
+int my_int = first_num;
+cout << my_int << endl;
+my_int = second_num;
+cout << my_int << endl;
+my_int = third_num;
+cout << my_int << endl;
+
+
+QUE3
+cout << line1 << endl;
+cout << line2 << endl;
+
+
+QUE4
+double my_double = 3.14;
+cout << my_double << endl;
+my_double = number; 
+cout << my_double << endl;
+
+
+QUE5
+cout << "Okay, it is time to ";
+cout << "learn about operators." << endl;
+
+
+Week 2
+
+QUE1
+int a = 4;
+int b = 9;
+
+QUE2
+cout << boolalpha << ( 5 == 4 ) << endl;
+cout << boolalpha << ( ! (5 < 8 && 6 >= 2) ) << endl;
+cout << boolalpha << ( 5 > 8 || 6 < 2 );
+
+
+QUE3
+string a = "Hello ";
+string b = "world";
+cout << (a + b) << endl;
+
+QUE4
+double seven = 7.0;
+double two = 2.0;
+cout << ( seven / two ) << endl;
+
+QUE5
+int sum = stoi(num1) + stoi(num2);
+cout << ( num1 + " + " + num2 + " = " + to_string(sum) ) << endl;
+Week 3
+
+
+Q1
+if ((x >= 0) && (x <= 25)) { 
+  cout << to_string(x) + " is between 0 and 25 or 75 and 100"; 
+}
+if ((x >= 75) && (x <= 100)) {
+  cout << to_string(x) + " is between 0 and 25 or 75 and 100";
+}
+
+
+
+Q2
+
+if (x % 5 == 0) { 
+  cout << to_string(x) + " is divisible by 5";
+}
+else {
+  cout << to_string(x) + " is not divisible by 5";
+}
+
+
+Q3
+
+if ((x % 5 == 0) && (x % 2 == 0)) { 
+  cout << to_string(x) + " is divisible by 5 and even";
+}
+else {
+  cout << to_string(x) + " is not divisible by 5 or it is odd";
+}
+
+
+
+Q4
+
+
+if ((x == "red") || (x == "blue") || (x == "yellow")) {
+  cout << x + " is a primary color";
+}
+else {
+  cout << x + " is not a primary color";
+}
+
+
+
+Q5
+
+
+if ((x == "a") || (x == "e") || (x == "i") || (x == "o") || (x == "u")) {
+  cout << x + " is a vowel";
+}
+else {
+  cout << x + " is not a vowel";
+}
+
+
+
+WEEK 4
+
+
+Q1 
+
+for(int i = 0; i < 3; i++) {
+  tina.forward(100);
+  tina.left(120);
+}
+
+Q2
+
+for (int i = 0; i < 10; i++) {
+  cout << x << endl;
+}
+
+Q3
+
+int sum = 0;
+  
+for (int iter = a; iter <= b; iter++) {
+  sum += iter;
+}
+  
+if (a == b) {
+  sum = a;
+}
+  
+cout << sum << endl;
+
+Q4
+
+for (int i = 100; i <= 100; i--) {
+  if (i == 0) {
+    cout << "Print me!" << endl;
+    break;
+  }
+  else {
+    while (true) {
+      break;
+      i++;
+      cout << "Don't print me!" << endl;
+    }
+  }
+}
+
+Q5
+
+for (int i = 1; i < 6; i++) {
+  for (int j = 5 - i; j > 0; j--) {
+    cout << ".";
+  }
+  cout << i << endl;
+}
+
+
+
+C++ Basic Structures: Vectors, Pointers, Strings, and Files
+
+WEEK 1
+
+
+Q1
+
+
+cout << oceans[0] << endl;
+cout << oceans[1] << endl;
+cout << oceans[2] << endl;
+cout << oceans[3] << endl;
+cout << oceans[4] << endl;
+
+
+
+
+Q2
+
+
+oceans.push_back("Pacific");
+oceans.push_back("Atlantic");
+oceans.push_back("Indian");
+oceans.push_back("Arctic");
+oceans.push_back("Southern");
+oceans.push_back("Place Holder");
+oceans.at(5) = "Delete";
+oceans.pop_back();
+
+
+
+
+
+
+Q3
+
+
+reverse.push_back(argv[3]);
+reverse.push_back(argv[2]);
+reverse.push_back(argv[1]);
+reverse.erase(reverse.begin());
+reverse.erase(reverse.begin());
+reverse.erase(reverse.begin());
+
+
+
+
+
+
+Q4
+
+
+
+nums[0][0] = a;
+nums[0][1] = b;
+nums[0][2] = a + b;
+nums[1][0] = c;
+nums[1][1] = d;
+nums[1][2] = c + d;
+nums[2][0] = a + c;
+nums[2][1] = b + d;
+nums[2][2] = ((a+b) + (c+d) + (a+c) + (b+d)); //or 2(a+b+c+d)
+
+
+
+
+
+
+Q5
+
+
+numList.push_back(input);
+
+
+
+for (auto a : numList) {
+  total += a;
+  avg = total / numList.size();
+}
+
+
+
+WEEK 2 
+
+
+Q1
+
+if (*p1 > *p2) {
+  cout << "The larger number is " << *p1 << endl;
+}
+  
+else if (*p1 < *p2) {
+  cout << "The larger number is " << *p2 << endl;
+}
+  
+else {
+  cout << "Neither number is larger" << endl;
+}
+
+
+
+Q2
+
+
+p1 = &a;
+p2 = &b;
+  
+cout << "The sum is ";
+
+
+
+
+
+WEEK 3
+
+
+Q1
+
+char first = my_string.at(0);
+char last = my_string.at(my_string.length()-1);
+
+cout << first << " is the first character and " << last << " is the last character" << endl;
+
+
+
+Q2
+
+for (int i = 0; i < my_string.length(); i++) {
+  for (int j = 0; j < my_string.length(); j++) {
+    if (j == my_string.length()-1) {
+      cout << my_string << endl;
+    }
+    else {
+      cout << my_string;
+    }
+  }
+}
+
+
+
+
+Q3
+
+for (char ch : original) {
+  if (isupper(ch)) {
+    modified += 'u';
+  }
+  else if (islower(ch)) {
+    modified += 'l';
+  }
+  else {
+    modified += '-';
+  }
+}
+    
+cout << original << endl;
+cout << modified << endl;
+
+
+
+
+Q4
+
+int mid = my_string.length() / 2;
+
+for (int i = 0; i < mid; i++) {
+  cout << my_string.at(i);
+}
+cout << endl;
+
+for (int j = mid; j < my_string.length(); j++) {
+  cout << my_string.at(j);
+}
+cout << endl;
+
+Q5
+
+for (int i = 0; i < my_string.length(); i++) {
+  if (i % 2 == 0) {
+    cout << my_string.at(i + 1);
+  }
+  else {
+    cout << my_string.at(i - 1);
+  }
+}
+
+
+
+
+
+WEEK 4
+
+
+
+
+
+Q1
+
+
+try {
+  ifstream file;
+  string read;
+  int lines = 0;
+  int chars = 0;
+  file.open(path);
+  if (!file) {
+    throw runtime_error("File failed to open.");
+  }
+  while (getline(file, read)) {
+    lines++;
+    chars += read.length();
+  }
+  file.close();
+  cout << lines << " line(s)" << endl;
+  cout << chars << " character(s)"; 
+}
+  
+catch (exception& e) {
+  cerr << e.what() << endl;
+}
+
+
+
+
+Q2
+
+
+vector<string> data;
+
+try {
+  ifstream file;
+  string read;
+  file.open(path);
+  if (!file) {
+    throw runtime_error("File failed to open.");
+  }
+  while (getline(file, read)) {
+    stringstream ss(read);
+    while (getline(ss, read, ',')) {
+      data.push_back(read);
+    }
+  }
+  file.close();
+}
+  
+catch (exception& e) {
+  cerr << e.what() << endl;
+}
+  
+int col1 = 0;
+int col2 = 0;
+int col3 = 0;
+int col4 = 0;
+for (int i = 0; i < data.size(); i++) {
+  if (i == 0 || i == 4 | i == 8) {
+    col1 += stoi(data.at(i));
+  }
+  if (i == 1 || i == 5 | i == 9) {
+    col2 += stoi(data.at(i));
+  }
+  if (i == 2 || i == 6 | i == 10) {
+    col3 += stoi(data.at(i));
+  }
+  if (i == 3 || i == 7 | i == 11) {
+    col4 += stoi(data.at(i));
+  }
+}
+  
+cout << col1 / 3 << " ";
+cout << col2 / 3 << " ";
+cout << col3 / 3 << " ";
+cout << col4 / 3;
+
+
+
+
+
+Q3
+
+vector<string> data;
+
+try {
+  ifstream file;
+  string read;
+  file.open(path);
+  if (!file) {
+    throw runtime_error("File failed to open.");
+  }
+  while (getline(file, read)) {
+    stringstream ss(read);
+    while (getline(ss, read)) {
+      data.push_back(read);
+    }
+  }
+  file.close();
+}
+  
+catch (exception& e) {
+  cerr << e.what() << endl;
+}
+  
+for (int i = data.size() - 1; i >= 0; i--) {
+  cout << data.at(i) << endl;
+}
+
+
+
+
+Q4
+
+
+vector<string> data;
+
+try {
+  ifstream file;
+  string read;
+  file.open(path);
+  if (!file) {
+    throw runtime_error("File failed to open.");
+  }
+  while (getline(file, read)) {
+    stringstream ss(read);
+    while (getline(ss, read, '\t')) {
+      data.push_back(read);
+    }
+  }
+  file.close();
+}
+  
+catch (exception& e) {
+  cerr << e.what() << endl;
+}
+  
+int max = 0;
+string person;
+  
+for (int i = 1; i < data.size(); i+=3) {
+  if (stoi(data.at(i)) > max) {
+    max = stoi(data.at(i));
+    person = data.at(i - 1);
+  }
+}
+  
+cout << "The oldest person is " << person << ".";
+
+
+
+Q5
+
+vector<string> data;
+
+try {
+  ifstream file;
+  string read;
+  file.open(path);
+  if (!file) {
+    throw runtime_error("File failed to open.");
+  }
+  while (getline(file, read)) {
+    stringstream ss(read);
+    while (getline(ss, read, ',')) {
+      data.push_back(read);
+    }
+  }
+  file.close();
+}
+  
+catch (exception& e) {
+  cerr << e.what() << endl;
+}
+  
+string cities;
+cout << "The following cities are in the Southern Hemisphere: ";
+  
+for (int i = 6; i < data.size(); i+=4) {
+  if (stoi(data.at(i)) < 0) {
+    cities += (data.at(i - 2) + ", ");
+  }
+}
+  
+cities.pop_back();
+cities.pop_back();
+cities += ".";
+  
+cout << cities;
+
+
+
+
+
+
+
+
+
+C++ Object Basics: Functions, Recursion, and Objects
+
+
+
+WEEK 1
+
+
+
+Q1
+
+double GetAvg(double x, double y) {
+  return (x + y) / 2;
+}
+
+
+
+
+Q2
+
+void GetOddsEvens(string x, vector<int>& y) {
+  if (x == "true") {
+    for (auto a1 : y) {
+      if (a1 % 2 == 0) {
+        cout << a1 << endl;
+      }
+    }
+  }
+  if (x == "false") {
+    for (auto a2 : y) {
+      if (a2 % 2 == 1) {
+        cout << a2 << endl;
+      }
+    }
+  }
+}
+
+
+
+
+Q3
+
+bool FindTerm(string x, vector<string>& y) {
+  bool b = false;
+  for (auto a : y) {
+    if (a == x) {
+      b = true;
+    }
+  }
+  return b;
+}
+
+
+
+Q4
+
+bool IsPalindrome(string x) {
+  bool palindrome = false;
+  string y;
+  for (int i = x.length() - 1; i >= 0; i--) {
+    y += x.at(i);
+  }
+  if (x == y) {
+    palindrome = true;
+  }
+  return palindrome;
+}
+
+
+
+
+Q5
+
+
+bool IsPalindrome(string x) {
+  bool palindrome = false;
+  if (x == (Reverse(x))) {
+    palindrome = true;
+  }
+  return palindrome;
+}
+
+
+
+
+
+WEEK 2
+
+
+
+
+Q1
+
+int RecursiveSum(int n) {
+  if (n == 0) {
+    return 0;
+  }
+  else {
+    return n + RecursiveSum(n - 1);
+  }
+}
+
+
+
+Q2
+
+int ListSum(vector<int>& nums) {
+  if (nums.size() == 1) {
+    return nums.at(0);
+  }
+  else {
+    vector<int> new_vector(nums.begin() + 1, nums.begin() + nums.size());
+    return nums.at(0) + ListSum(new_vector);
+  }
+}
+
+
+Q3
+
+int BunnyEars(int n) {
+  if (n == 0) {
+    return 0;
+  }
+  else {
+    return 2 + BunnyEars(n - 1);
+  }
+}
+
+
+
+Q4
+
+string ReverseString(string s) {
+  if (s.length() == 1) {
+    return s;
+  }
+  else {
+    return s.substr(s.length() - 1) + ReverseString(s.substr(0, s.length() - 1));
+  }
+}
+
+
+Q5
+
+int GetMax(vector<int>& nums) {
+  if (nums.size() == 1) {
+    return nums.at(0);
+  }
+  else {
+    vector<int> new_vector(nums.begin() + 1, nums.begin() + nums.size());
+    return max(nums.at(0), GetMax(new_vector));
+  }
+}
+
+
+
+
+
+
+WEEK 3 
+
+
+
+
+
+Q1
+
+class PracticeClass {
+  public:
+    string name;
+};
+
+
+
+Q2
+
+class Cat {
+  public:
+    string breed;
+    string color;
+    string name;
+  
+  Cat() {
+    breed = "American Shorthair";
+    color = "black";
+    name = "Kiwi";
+  }
+};
+
+
+
+Q3
+
+
+class Superhero {
+  public:
+    string name;
+    string identity;
+    vector<string> powers;
+  
+  Superhero(string n, string id, vector<string> p) {
+    name = n;
+    identity = id;
+    powers = p;
+  }
+};
+
+
+
+
+Q4
+
+class Observation {
+  public:
+    string date;
+    double temperature;
+    double elevation;
+    int penguins;
+    double precipitation = 0;
+  
+  Observation(string d, double t, double e, int p) {
+    date = d;
+    temperature = t;
+    elevation = e;
+    penguins = p;
+  }
+};
+
+
+Q5
+
+BigCat snow_leopard("uncia", "snow leopard", {"Himalaya mountains", "Siberian mountains"});
+
+
+
+
+
+
+WEEK 4
+
+
+
+Q1
+
+#include <iostream>
+using namespace std;
+
+class CelestialBody {
+  public:
+    CelestialBody(string n, double diam, double dist, int m) {
+      name = n;
+      diameter = diam;
+      distance = dist;
+      moons = m;
+    }
+    double ComparedToEarth() {
+      double earth = 12756.3;
+      double relative_size = diameter / earth;
+      return relative_size;
+    }
+    
+  private:
+    string name;
+    double diameter;
+    double distance;
+    int moons;
+};
+
+
+int main() {
+  
+  CelestialBody planet("Jupiter", 142984, 778360000, 79);
+    
+  cout << planet.ComparedToEarth() << endl;
+
+  
+  return 0;
+  
+}
+
+
+
+Q2
+
+#include <iostream>
+using namespace std;
+
+class CelestialBody {
+  public:
+    CelestialBody(string n, double diam, double dist, int m) {
+      name = n;
+      diameter = diam;
+      distance = dist;
+      moons = m;
+    }
+    string CloserToSun(CelestialBody cb) {
+      if (distance < cb.distance) {
+        return name;
+      }
+      else {
+        return cb.name;
+      }
+    }
+    
+  private:
+    string name;
+    double diameter;
+    double distance;
+    int moons;
+};
+
+int main() {
+  
+  //DO NOT EDIT the code below
+  
+  CelestialBody mercury("Mercury", 4879.4, 57909000, 0);
+  CelestialBody venus("Venus", 12103.6, 108160000, 0);
+  cout << mercury.CloserToSun(venus) << endl;
+
+  //DO NOT EDIT the code above
+  
+  return 0;
+  
+}
+
+
+
+Q3
+
+
+#include <iostream>
+using namespace std;
+
+class Mass {
+  public:
+    Mass(double mg, double g, double kg) {
+      milligrams = mg;
+      grams = g;
+      kilograms = kg;
+    }
+    double TotalWeight() {
+      return ((milligrams / 1000) + grams + (kilograms * 1000));
+    }
+    string CompareWeight(Mass m) {
+      double mass1 = TotalWeight();
+      double mass2 = m.TotalWeight();
+      if (mass1 > mass2) {
+        return "The first object is heavier.";
+      }
+      else if (mass2 > mass1) {
+        return "The second object is heavier.";
+      }
+      else {
+        return "The two objects weigh the same.";
+      }
+    }
+  
+  private:
+    double milligrams;
+    double grams;
+    double kilograms;
+};
+
+
+int main() {
+  
+  //DO NOT EDIT the code below
+
+  Mass m1(800, 17, 3);
+  Mass m2(730, 38, 2);
+  cout << m1.TotalWeight() << endl;
+  cout << m2.TotalWeight() << endl;
+  cout << m1.CompareWeight(m2) << endl;
+
+  //DO NOT EDIT the code above
+  
+  return 0;
+  
+}
+
+
+
+
+Q4
+
+
+#include <iostream>
+using namespace std;
+
+class MarbleBag {
+  public:
+    MarbleBag(int r, int b, int y) {
+      red = r;
+      blue = b;
+      yellow = y;
+    }
+    int AddRed(int amount) {
+      return red += amount;
+    }
+    int AddBlue(int amount) {
+      return blue += amount;
+    }
+    int AddYellow(int amount) {
+      return yellow += amount;
+    }
+    int RedTotal() {
+      return red;
+    }
+    int BlueTotal() {
+      return blue;
+    }
+    int YellowTotal() {
+      return yellow;
+    }
+    int BagTotal() {
+      return red + blue + yellow;
+    }
+
+  private:
+    int red;
+    int blue;
+    int yellow;
+};
+
+int main() {
+  
+  //DO NOT EDIT code below this line
+  
+  MarbleBag bag(12, 8, 19);
+  bag.AddRed(4);
+  bag.AddBlue(12);
+  bag.AddYellow(-1);
+  bag.AddBlue(-3);
+  cout << "There are " << bag.RedTotal() << " red marbles." << endl;
+  cout << "There are " << bag.BlueTotal() << " blue marbles." << endl;
+  cout << "There are " << bag.YellowTotal() << " yellow marbles." << endl;
+  cout << "There are " << bag.BagTotal() << " total marbles." << endl;
+
+  //DO NOT EDIT code above this line
+  
+  return 0;
+  
+}
+
+
+
+
+
+Q5
+
+
+#include <iostream>
+using namespace std;
+class Subway {
+  public:
+    Subway() {
+      passengers = 0;
+      total_fares = 0;
+    }
+    int GetPassengers() {
+      return passengers;
+    }
+    void Board(int p) {
+      if (p >= 0) {
+        passengers += p;
+        CalculateFares(p);
+      }
+    }
+    void Disembark(int p) {
+      if (p >= 0) {
+        if (passengers - p < 0) {
+          passengers = 0;
+        }
+        else {
+          passengers -= p;
+        }
+      }
+    }
+    double GetFares() {
+      return total_fares;
+    }
+    
+  private:
+    const double fare = 2.40; //variable cannot be reassigned
+    int passengers;
+    double total_fares;
+
+    void CalculateFares(int p) { //private helper class function
+      total_fares += p * fare;
+    }
+};
+
+
+int main() {
+  
+  //DO NOT EDIT code below this line
+
+  Subway s;
+  cout << s.GetPassengers() << endl;
+  s.Board(23);
+  s.Disembark(12);
+  cout << s.GetPassengers() << endl;
+  cout << s.GetFares() << endl;
+
+  //DO NOT EDIT code above this line
+  
+  return 0;
+  
+}
+
+
+
+
+
+Object-Oriented C++: Inheritance and Encapsulation
+
+
+WEEK 1
+
+
+
+
+
+
+Q1
+
+#include <iostream>
+using namespace std;
+
+class Fruit {
+  public:
+    Fruit(string n, string c) {
+      name = n;
+      color = c;
+    }
+  
+    string GetName() {
+      return name;
+    }
+  
+    void SetName(string new_name) {
+      name = new_name;
+    }
+  
+    string GetColor() {
+      return color;
+    }
+  
+    void SetColor(string new_color) {
+      color = new_color;
+    }
+  
+  private:
+    string name;
+    string color;
+};
+
+int main() {
+  
+  //DO NOT EDIT CODE BELOW THIS LINE
+
+  Fruit fruit("apple", "red");
+  cout << fruit.GetName() << endl;
+  cout << fruit.GetColor() << endl;
+  fruit.SetName("orange");
+  fruit.SetColor("orange");
+  cout << fruit.GetName() << endl;
+  cout << fruit.GetColor() << endl;
+
+  //DO NOT EDIT CODE ABOVE THIS LINE
+  
+  return 0;
+  
+}
+
+
+
+
+
+Q2
+
+#include <iostream>
+using namespace std;
+
+class Watch {
+  public:
+    Watch(string mf, string mo, int d, int w, string mt) {
+      manufacturer = mf;
+      model = mo;
+      diameter = d;
+      water_resistance = w;
+      material = mt;
+    }
+  
+    string GetManufacturer() {
+      return manufacturer;
+    }
+
+    void SetManufacturer(string new_manufacturer) {
+      manufacturer = new_manufacturer;
+    }
+
+    string GetModel() {
+      return model;
+    }
+
+    void SetModel(string new_model) {
+      model = new_model;
+    }
+
+    int GetDiameter() {
+      return diameter;
+    }
+
+    void SetDiameter(int new_diameter) {
+      diameter = new_diameter;
+    }
+
+    int GetWaterResistance() {
+      return water_resistance;
+    }
+
+    void SetWaterResistance(int new_water_resistance) {
+      water_resistance = new_water_resistance;
+    }
+
+    string GetMaterial() {
+      return material;
+    }
+
+    void SetMaterial(string new_material) {
+      material = new_material;
+    }
+
+    void Summary() {
+      cout << "Manufacturer: " << manufacturer << endl;
+      cout << "Model: " << model << endl;
+      cout << "Diameter: " << diameter << " mm" << endl;
+      cout << "Water Resistance: " << water_resistance << " m" << endl;
+      cout << "Material: " << material << endl;
+    }
+  
+  private:
+    string manufacturer;
+    string model;
+    int diameter;
+    int water_resistance;
+    string material;
+};
+
+
+int main() {
+  
+  //DO NOT EDIT CODE BELOW THIS LINE
+
+  Watch my_watch("Omega", "Speedmaster", 42, 50, "steel");
+  cout << my_watch.GetManufacturer() << endl;
+  cout << my_watch.GetModel() << endl;
+  cout << my_watch.GetDiameter() << endl;
+  cout << my_watch.GetWaterResistance() << endl;
+  cout << my_watch.GetMaterial() << endl;
+  my_watch.SetManufacturer("Rolex");
+  my_watch.SetModel("Explorer");
+  my_watch.SetDiameter(36);
+  my_watch.SetWaterResistance(60);
+  my_watch.SetMaterial("gold");
+  my_watch.Summary();
+
+  //DO NOT EDIT CODE ABOVE THIS LINE
+  
+  return 0;
+  
+}
+
+
+
+
+Q3
+
+#include <iostream>
+using namespace std;
+
+class Song {
+  
+    public:
+    Song(string ar, string t, string al) {
+      artist = ar;
+      title = t;
+      album = al;
+    }
+  
+    string GetArtist() {
+      return artist;
+    }
+
+    void SetArtist(string new_artist) {
+      artist = new_artist;
+    }
+
+    string GetTitle() {
+      return title;
+    }
+
+    void SetTitle(string new_title) {
+      title = new_title;
+    }
+
+    string GetAlbum() {
+      return album;
+    }
+
+    void SetAlbum(string new_album) {
+      album = new_album;
+    }
+
+    int GetPlayCount() {
+      return play_count;
+    }
+
+    double GetMoneyEarned() {
+      return money_earned;
+    }
+
+    double GetPayRate() {
+      return pay_rate;
+    }
+
+    void Play(int count) {
+      for (int i = 0; i < count; i++) {
+        UpdatePlayCount();
+        UpdateMoneyEarned();
+      }
+    }
+  
+    void Stats() {
+      cout << artist << endl;
+      cout << title << endl;
+      cout << album << endl;
+      cout << play_count << endl;
+      cout << pay_rate << endl;
+      cout << money_earned << endl;
+    }
+  
+//DO NOT EDIT CODE BELOW THIS LINE
+
+  private:
+    string artist;
+    string title;
+    string album;
+    int play_count = 0;
+    const double pay_rate = 0.001;
+    double money_earned = 0;
+    
+    void UpdatePlayCount() {
+      play_count++;
+    }
+  
+    void UpdateMoneyEarned() {
+      money_earned = play_count * pay_rate;
+    }
+};
+
+int main() {
+
+  Song my_song("Led Zeppelin", "Ten Years Gone", "Physical Graffiti");
+  cout << my_song.GetArtist() << endl;
+  cout << my_song.GetTitle() << endl;
+  cout << my_song.GetAlbum() << endl;
+  cout << my_song.GetPlayCount() << endl;
+  cout << my_song.GetPayRate() << endl;
+  cout << my_song.GetMoneyEarned() << endl;
+  my_song.SetArtist("Michael Jackson");
+  my_song.SetTitle("Beat It");
+  my_song.SetAlbum("Thriller");
+  my_song.Play(1000000);
+  my_song.Stats();
+  
+  return 0;
+  
+}
+
+//DO NOT EDIT CODE ABOVE THIS LINE
+
+
+
+Q4
+
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+class Atm {
+  public:
+    Atm() {}
+  
+    double GetMoney() {
+      return money;
+    }
+  
+    void Deposit(double amount) {
+      if (amount <= 0) {
+        cout << "You cannot deposit a negative or 0 amount of money." << endl;
+      }
+      else {
+        money += amount;
+      }
+    }
+  
+    void Withdraw(double amount) {
+      if (amount <= 0) {
+        cout << "You cannot withdraw a negative or 0 amount of money." << endl;
+      }
+      else if (amount > money) {
+        cout << "You do not have enough funds to withdraw that amount." <<endl;
+      }
+      else {
+        money -= amount;
+      }
+    }
+  
+  private:
+    double money = 0;
+};
+
+
+int main() {
+  
+  //DO NOT EDIT CODE BELOW THIS LINE
+
+  Atm my_atm;
+  my_atm.Deposit(-10);
+  my_atm.Deposit(100.02);
+  my_atm.Withdraw(-20);
+  my_atm.Withdraw(200);
+  my_atm.Withdraw(50.22);
+  cout << fixed; //prevents value from being truncated or rounded
+  cout << setprecision(2); //sets value to 2 decimal places
+  cout << my_atm.GetMoney() << endl;
+
+  //DO NOT EDIT CODE ABOVE THIS LINE
+  
+  return 0;
+  
+}
+
+
+
+Q5
+
+
+#include <iostream>
+using namespace std;
+
+class CardBinder {
+  public:
+    CardBinder() {}
+  
+    int GetGold() {
+      return gold_card;
+    }
+  
+    int GetSilver() {
+      return silver_card;
+    }
+  
+    int GetTotal() {
+      return gold_card + silver_card;
+    }
+  
+    void AddGold(int amount) {
+      if (amount <= 0) {
+        cout << "You cannot add a negative or 0 amount of cards." << endl;
+      }
+      else if (amount + gold_card + silver_card > 20) {
+        cout << "You do not have enough binder room." << endl;
+      }
+      else {
+        gold_card += amount;
+      }
+    }
+  
+    void RemoveGold(int amount) {
+      if (amount <= 0) {
+        cout << "You cannot remove a negative or 0 amount of cards." << endl;
+      }
+      else if (gold_card - amount < 0) {
+        cout << "You do not have enough gold cards to remove." << endl;
+      }
+      else {
+        gold_card -= amount;
+      }
+    }
+  
+    void AddSilver(int amount) {
+      if (amount <= 0) {
+        cout << "You cannot add a negative or 0 amount of cards." << endl;
+      }
+      else if (amount + gold_card +silver_card > 20) {
+        cout << "You do not have enough binder room." << endl;
+      }
+      else {
+        silver_card += amount;
+      }
+    }
+  
+    void RemoveSilver(int amount) {
+      if (amount <= 0) {
+        cout << "You cannot remove a negative or 0 amount of cards." << endl;
+      }
+      else if (silver_card - amount < 0) {
+        cout << "You do not have enough silver cards to remove." << endl;
+      }
+      else {
+        silver_card -= amount;
+      }
+    }
+  
+  private:
+    int gold_card = 0;
+    int silver_card = 0;
+};
+
+int main() {
+  
+  //DO NOT EDIT CODE BELOW THIS LINE
+
+  CardBinder cb;
+  cb.AddGold(21);
+  cb.AddGold(11);
+  cb.AddSilver(-4);
+  cb.AddSilver(8);
+  cb.RemoveGold(12);
+  cb.RemoveGold(4);
+  cb.RemoveSilver(-2);
+  cb.RemoveSilver(6);
+  cout << cb.GetGold() << endl;
+  cout << cb.GetSilver() << endl;
+  cout << cb.GetTotal() << endl;
+  
+
+  //DO NOT EDIT CODE ABOVE THIS LINE
+  
+  return 0;
+  
+}
+
+
+
+
+
+WEEK 2
+
+
+
+
+Q1
+
+#include <iostream>
+using namespace std;
+
+//DO NOT EDIT code below this line
+
+class CelestialBody {
+  public:
+    CelestialBody(double s, double m, string c, string n) {
+      size = s;
+      mass = m;
+      atm_composition = c;
+      name = n;
+    }
+
+    double GetSize() {
+      return size;
+    }
+
+    double GetMass() {
+      return mass;
+    }
+
+    string GetComposition() {
+      return atm_composition;
+    }
+
+    string GetName() {
+      return name;
+    }
+  
+  private:
+    double size;
+    double mass;
+    string atm_composition;
+    string name;
+};
+
+//DO NOT EDIT code above this line
+
+//DO NOT EDIT//////////////////////////////
+class Satellite : public CelestialBody { //
+///////////////////////////////////////////
+  public: 
+    Satellite(double s, double m, string c, string n, string hp) : CelestialBody(s, m, c, n) {
+      host_planet = hp;
+    }
+
+    string GetHostPlanet() {
+      return host_planet;
+    }
+
+    void SetHostPlanet(string new_host_planet) {
+      host_planet = new_host_planet;
+    }
+  
+  private: 
+    string host_planet;
+};
+
+//DO NOT EDIT///////////////////////////
+class Planet : public CelestialBody { //
+////////////////////////////////////////
+  public: 
+    Planet(double s, double m, string c, string n, string hs) : CelestialBody(s, m, c, n) {
+      host_star = hs;
+    }
+
+    string GetHostStar() {
+      return host_star;
+    }
+
+    void SetHostStar(string new_host_star) {
+      host_star = new_host_star;
+    }
+  
+  private: 
+    string host_star;
+};
+
+int main() {
+  
+  //DO NOT EDIT code below this line
+
+  Satellite s(2651, 3716, "helium", "Moon", "Earth");
+  Planet p(5349, 8910, "nitrogen", "Earth", "Sun");
+  Satellite s2(3199, 13452, "nitrogen", "Titan", "Saturn");
+  Planet p2(82713, 56834, "hydrogen", "Saturn", "Sun");
+  cout << "Satellite name = " << s.GetName() << ", size = " << s.GetSize();
+  cout << ", mass = " << s.GetMass() << ", atmospheric composition = " << s.GetComposition();
+  cout << ", host planet = " << s.GetHostPlanet() << endl;
+  cout << "Planet name = " << p.GetName() << ", size = " << p.GetSize();
+  cout << ", mass = " << p.GetMass() << ", atmospheric composition = " << p.GetComposition();
+  cout << ", host star = " << p.GetHostStar() << endl;
+  cout << "Satellite name = " << s2.GetName() << ", size = " << s2.GetSize();
+  cout << ", mass = " << s2.GetMass() << ", atmospheric composition = " << s2.GetComposition();
+  cout << ", host planet = " << s2.GetHostPlanet() << endl;
+  cout << "Planet name = " << p2.GetName() << ", size = " << p2.GetSize();
+  cout << ", mass = " << p2.GetMass() << ", atmospheric composition = " << p2.GetComposition();
+  cout << ", host star = " << p2.GetHostStar() << endl;
+
+  //DO NOT EDIT code above this line
+  
+  return 0;
+  
+}
+
+
+
+Q2
+
+#include <iostream>
+using namespace std;
+
+//DO NOT EDIT code below this line
+
+class Book {
+  public:
+    Book(string t, string a, string g) {
+      title = t;
+      author = a;
+      genre = g;
+    }
+
+    string GetTitle() {
+      return title;
+    }
+
+    void SetTitle(string new_title) {
+      title = new_title;
+    }
+
+    string GetAuthor() {
+      return author;
+    }
+
+    void SetAuthor(string new_author) {
+      author = new_author;
+    }
+
+    string GetGenre() {
+      return genre;
+    }
+  
+    void SetGenre(string new_genre) {
+      genre = new_genre;
+    }
+  
+  private: 
+    string title;
+    string author;
+    string genre;
+};
+
+//DO NOT EDIT code above this line
+
+///DO NOT EDIT////////////////////
+class BlogPost : public Book { //
+/////////////////////////////////
+  public:
+    BlogPost(string t, string a, string g, string w, int wc, int pv) : Book(t, a, g) {
+      website = w;
+      word_count = wc;
+      page_views = pv;
+    }
+  
+    string GetWebsite() {
+      return website;
+    }
+
+    void SetWebsite(string new_website) {
+      website = new_website;
+    }
+
+    int GetWordCount() {
+      return word_count;
+    }
+
+    void SetWordCount(int new_word_count) {
+      word_count = new_word_count;
+    }
+
+    int GetPageViews() {
+      return page_views;
+    }
+
+    void SetPageViews(int new_page_views) {
+      page_views = new_page_views;
+    }
+
+  private:
+    string website;
+    int word_count;
+    int page_views;
+};
+int main() {
+  
+  //DO NOT EDIT code below this line
+
+  BlogPost my_post("Hot Summer Trends", "Amy Gutierrez", "fashion", "Vogue", 2319, 2748);
+  cout << my_post.GetTitle() << endl;
+  cout << my_post.GetAuthor() << endl;
+  cout << my_post.GetGenre() << endl;
+  cout << my_post.GetWebsite() << endl;
+  cout << my_post.GetWordCount() << endl;
+  cout << my_post.GetPageViews() << endl;
+  BlogPost codio("Adopting Codio", "Anh Le", "computer science", "Codio", 2500, 5678);
+  cout << codio.GetTitle() << endl;
+  cout << codio.GetAuthor() << endl;
+  cout << codio.GetGenre() << endl;
+  cout << codio.GetWebsite() << endl;
+  cout << codio.GetWordCount() << endl;
+  cout << codio.GetPageViews() << endl;
+
+  //DO NOT EDIT code above this line
+  
+  return 0;
+  
+}
+
+
+Q3
+
+#include <iostream>
+using namespace std;
+
+//DO NOT EDIT code below this line
+
+class Parent1 {
+  public:
+    string Identify() {
+      return "This function is called from Parent1";
+    }
+};
+
+class Parent2 : public Parent1 {
+  public:
+    string Identify() {
+      return "This function is called from Parent2";
+    }
+};
+
+//DO NOT EDIT code above this line
+
+class Child : public Parent2 {
+  public:
+    string Identify() {
+      return "This function is called from Child";
+    }
+  
+    string Identify2() {
+      return Parent2::Identify();
+    }
+  
+    string Identify3() {
+      return Parent1::Identify();
+    }
+};
+
+int main() {
+  
+  //DO NOT EDIT code below this line
+
+  Child c;
+  cout << c.Identify() << endl;
+  cout << c.Identify2() << endl;
+  cout << c.Identify3() << endl;
+  
+  //DO NOT EDIT code above this line
+  
+  return 0;
+  
+}
+
+
+Q4
+
+#include <iostream>
+using namespace std;
+
+//DO NOT EDIT code below this line
+
+class PiggyBank {
+  public:
+    PiggyBank(int o, int f, int tn, int tw) {
+      ones = o;
+      fives = f;
+      tens = tn;
+      twenties = tw;
+    }
+  
+    int GetOnes() {
+      return ones;
+    }
+  
+    void SetOnes(int new_ones) {
+      ones = new_ones;
+    }
+  
+    int GetFives() {
+      return fives;
+    }
+  
+    void SetFives(int new_fives) {
+      fives = new_fives;
+    }
+  
+    int GetTens() {
+      return tens;
+    }
+  
+    void SetTens(int new_tens) {
+      tens = new_tens;
+    }
+  
+    int GetTwenties() {
+      return twenties;
+    }
+  
+    void SetTwenties(int new_twenties) {
+      twenties = new_twenties;
+    }
+  
+  private:
+    int ones;
+    int fives;
+    int tens;
+    int twenties;
+};
+
+//DO NOT EDIT code above this line
+
+//DO NOT EDIT/////////////////////
+class Cash : public PiggyBank { //
+//////////////////////////////////
+  public:
+    Cash(int o, int f, int tn, int tw) : PiggyBank(o, f, tn, tw) {}
+  
+    void DisplayBills() {
+      cout << "One-dollar bill: " << GetOnes() << endl;
+      cout << "Five-dollar bill: " << GetFives() << endl;
+      cout << "Ten-dollar bill: " << GetTens() << endl;
+      cout << "Twenty-dollar bill: " << GetTwenties() << endl;
+    }
+  
+    void DisplayCashTotal() {
+      cout << "Total amount: "; 
+      cout << GetOnes() + GetFives() * 5 + GetTens() * 10 + GetTwenties() * 20;
+      cout << endl;
+    }
+};
+
+int main() {
+  
+  //DO NOT EDIT code below this line
+
+  Cash c(1, 2, 3, 4);
+  c.DisplayBills();
+  c.DisplayCashTotal();
+  Cash c2(9, 8, 7, 6);
+  c2.DisplayBills();
+  c2.DisplayCashTotal();
+
+  //DO NOT EDIT code above this line
+  
+  return 0;
+  
+}
+
+
+
+Q5
+
+#include <iostream>
+using namespace std;
+
+//DO NOT EDIT code below this line
+
+class Person {
+  public:
+    Person(string n, string a) {
+      name = n;
+      address = a;
+    }
+  
+    string GetName() {
+      return name;
+    }
+
+    void SetName(string new_name) {
+      name = new_name;
+    }
+
+    string GetAddress() {
+      return address;
+    }
+
+    void SetAddress(string new_address) {
+      address = new_address;
+    }
+
+    string Info() {
+      return name + " lives at " + address + ".\n";
+    }
+  
+  private:
+    string name;
+    string address;
+};
+
+//DO NOT EDIT code above this line
+
+//DO NOT EDIT/////////////////////////////////////////////////
+class CardHolder : public Person {                          //
+  public:                                                   //
+    CardHolder(string n, string a, int an) : Person(n, a) { //
+      account_number = an;                                  //
+      balance = 0;                                          //
+      credit_limit = 5000;                                  //
+    }                                                       //
+//////////////////////////////////////////////////////////////
+  
+    int GetAccountNumber() {
+      return account_number;
+    }
+
+    void SetAccountNumber(int new_account_number) {
+      account_number = new_account_number;
+    }
+
+    double GetBalance() {
+      return balance;
+    }
+
+    void SetBalance(double new_balance) {
+      balance = new_balance;
+    }
+
+    int GetCreditLimit() {
+      return credit_limit;
+    }
+
+    void SetCreditLimit(int new_credit_limit) {
+      credit_limit = new_credit_limit;
+    }
+
+    void Sale(double price) {
+      balance += price;
+    }
+
+    void Payment(double amount) {
+      balance -= amount;
+    }
+  
+  private:
+    int account_number;
+    double balance;
+    int credit_limit;
+};
+
+//DO NOT EDIT/////////////////////////////////////////////////////////////
+class PlatinumClient : public CardHolder {                              //
+  public:                                                               //
+    PlatinumClient(string n, string a, int an) : CardHolder(n, a, an) { //
+      cash_back = 0.02;                                                 //
+      rewards = 0;                                                      //
+    }                                                                   //
+//////////////////////////////////////////////////////////////////////////
+
+    double GetCashBack() {
+      return cash_back;
+    }
+
+    void SetCashBack(double new_cash_back) {
+      cash_back = new_cash_back;
+    }
+
+    double GetRewards() {
+      return rewards;
+    }
+
+    void SetRewards(double new_rewards) {
+      rewards = new_rewards;
+    }
+
+    void Sale(double price) {
+      rewards += cash_back * price;
+      SetBalance(GetBalance() + price);
+    }
+  
+  private:
+    double cash_back;
+    double rewards;
+};
+
+int main() {
+  
+  //DO NOT EDIT code below this line
+
+  PlatinumClient pc("Sarah", "101 Main Street", 123364);
+  pc.CardHolder::Sale(100);
+  cout << pc.GetRewards() << endl;
+  pc.Sale(100);
+  cout << pc.GetRewards() << endl;
+  cout << pc.GetBalance() << endl;
+  pc.Payment(50);
+  cout << pc.GetBalance() << endl;
+  cout << pc.Info() << endl;
+
+  //DO NOT EDIT code above this line
+  
+  return 0;
+  
+}
+
+
+
+WEEK 3
+
+
+
+Q1
+
+#include <iostream>
+#include <vector>
+using namespace std;
+
+//DO NOT EDIT/////////////////
+class VectorAddThree {      //
+  public:                   //
+    vector<int> Add() {     //
+      nums.push_back(num1); //
+      nums.push_back(num2); //
+      nums.push_back(num3); //
+      return nums;          //
+    }                       //
+                            //
+  protected:                //
+    int num1 = 1;           //
+    int num2 = 2;           //
+    int num3 = 3;           //
+                            //
+  private:                  //
+    vector<int> nums;       //
+};                          //
+//////////////////////////////
+
+class VectorAddSix : public VectorAddThree {
+  public:
+    vector<int> Add() {
+      nums.push_back(num1);
+      nums.push_back(num2);
+      nums.push_back(num3);
+      nums.push_back(num4);
+      nums.push_back(num5);
+      nums.push_back(num6);
+      return nums;
+    }
+  
+  protected:
+    int num4 = 4;
+    int num5 = 5;
+    int num6 = 6;
+  
+  private:
+    vector<int> nums;
+};
+
+int main() {
+  
+  //DO NOT EDIT code below this line
+   
+  VectorAddSix v6;
+  for (int i : v6.Add()) {
+    cout << i << endl;
+  }
+
+  //DO NOT EDIT code above this line
+  
+  return 0;
+  
+}
+
+
+
+Q2
+
+#include <iostream>
+#include <vector>
+using namespace std;
+
+//DO NOT EDIT/////////////////////////////////
+class Vehicle {                             //
+  public:                                   //
+    virtual void Distance(double time) = 0; //
+};                                          //
+//////////////////////////////////////////////
+
+class Airplane : public Vehicle {
+  public:
+    Airplane(double s) {
+      speed = s;
+    }
+  
+    void Distance(double time) {
+      cout << speed * time << endl;
+    }
+    
+  private:
+    double speed;
+};
+
+int main() {
+  
+  //DO NOT EDIT code below this line
+  
+  Airplane a(550.0);
+  a.Distance(2);
+  a.Distance(3.15);
+  a.Distance(10.63);
+  Airplane a2(228.5);
+  a2.Distance(2);
+  a2.Distance(3.15);
+  a2.Distance(10.63);
+
+  //DO NOT EDIT code above this line
+  
+  return 0;
+  
+}
+
+
+Q3
+
+#include <iostream>
+#include <vector>
+using namespace std;
+
+//DO NOT EDIT/////////////////////////////////////
+class Temperature {                             //
+  public:                                       //
+    virtual double Celsius(double temp) = 0;    //
+    virtual double Fahrenheit(double temp) = 0; //
+};                                              //
+//////////////////////////////////////////////////
+
+class Conversion : public Temperature {
+  public:
+    double ConvertTo(char unit, double temp) {
+      if (unit == 'C' || unit == 'c') {
+        return Celsius(temp);
+      } 
+      else if (unit == 'F' || unit == 'f') {
+        return Fahrenheit(temp);
+      }
+      return -0.0001;
+    }
+  
+  private:
+    double Celsius(double temp) {
+      return (temp - 32) / 1.8;
+    }
+  
+    double Fahrenheit(double temp) {
+      return temp * 1.8 + 32;
+    }
+};
+
+
+int main() {
+  
+  //DO NOT EDIT code below this line
+   
+  Conversion c;
+  cout << c.ConvertTo('c', 212.0) << endl;
+  cout << c.ConvertTo('C', 78.0) << endl;
+  cout << c.ConvertTo('h', 23.0) << endl;
+  cout << c.ConvertTo('F', 0.0) << endl;
+  cout << c.ConvertTo('f', 29.0) <<endl;
+  cout << c.ConvertTo('3', 112.0) << endl;
+
+  //DO NOT EDIT code above this line
+  
+  return 0;
+  
+}
+
+
+Q4
+
+#include <iostream>
+#include <vector>
+#include <bits/stdc++.h>
+using namespace std;
+
+class Median {
+  public:
+    double CalculateMedian(int n1, int n2) {
+      return (double) (n1 + n2) / 2;
+    }
+  
+    double CalculateMedian(int n1, int n2, int n3) {
+      vector<int> nums = {n1, n2, n3};
+      sort(nums.begin(), nums.end());
+      return nums.at(1);
+    }
+
+    double CalculateMedian(int n1, int n2, int n3, int n4) {
+      vector<int> nums = {n1, n2, n3, n4};
+      sort(nums.begin(), nums.end());
+      return (double) (nums.at(1) + nums.at(2)) / 2;
+    }
+
+    double CalculateMedian(int n1, int n2, int n3, int n4, int n5) {
+      vector<int> nums = {n1, n2, n3, n4, n5};
+      sort(nums.begin(), nums.end());
+      return nums.at(2);
+    }
+};
+
+
+int main() {
+  
+  //DO NOT EDIT code below this line
+   
+  Median m;
+  cout << m.CalculateMedian(3, 5, 1, 4, 2) << endl;
+  cout << m.CalculateMedian(8, 6, 4, 2) << endl;
+  cout << m.CalculateMedian(9, 3, 7) << endl;
+  cout << m.CalculateMedian(5, 2) << endl;
+  Median m2;
+  cout << m2.CalculateMedian(24, 22, 21, 23, 20) << endl;
+  cout << m2.CalculateMedian(12, 18, 9, 3) << endl;
+  cout << m2.CalculateMedian(0, 1, 0) << endl;
+  cout << m2.CalculateMedian(5, 3) << endl;
+
+  //DO NOT EDIT code above this line
+  
+  return 0;
+  
+}
+
+
+Q5
+
+#include <iostream>
+#include <vector>
+using namespace std;
+
+//DO NOT EDIT///////////////////////////////////////////
+class Words {                                         //
+  public:                                             //
+    Words(string s1) {                                //
+      original = s1;                                  //
+    }                                                 //
+                                                      //
+    string SubstituteChar() {                         //
+      string sub;                                     //
+      if (original.length() < 3) {                    //
+        return "Not enough characters";               //
+      }                                               //
+      else {                                          //
+        for (int i = 0; i < original.length(); i++) { //
+          if (i == 2) {                               //
+            sub += "HELLO";                           //
+          }                                           //
+          else {                                      //
+            sub += original.at(i);                    //
+          }                                           //
+        }                                             //
+      }                                               //
+      return sub;                                     //
+    }                                                 //
+                                                      //
+  private:                                            //
+    string original;                                  //
+};                                                    //
+////////////////////////////////////////////////////////
+
+class Substitute : public Words {
+  public:
+    Substitute(string s2) : Words(s2) {
+      input_string = s2;
+    }
+  
+    string SubstituteChar() {
+      string sub;
+      if (input_string.length() < 5) {
+        return "Not enough characters";
+      }
+      else {
+        for (int i = 0; i < input_string.length(); i++) {
+          if (i == 4) {
+            sub += "HELLO";
+          }
+          else {
+            sub += input_string.at(i);
+          }
+        }
+      }
+      return sub;
+    }
+  
+  private:
+    string input_string;
+};
+
+
+int main() {
+  
+  //DO NOT EDIT code below this line
+  
+  Substitute s1("dog");
+  cout << s1.SubstituteChar() << endl;
+  Substitute s2("string");
+  cout << s2.SubstituteChar() << endl;
+  Words w("string");
+  cout << w.SubstituteChar() << endl;
+  
+  //DO NOT EDIT code above this line
+  
+  return 0;
+  
+}
+
+
+
+WEEK 4
+
+Q1
+
+#ifndef HEADER_H
+#define HEADER_H
+#include <iostream>
+using namespace std;
+
+class Hello {
+  public:
+    void PrintHello() {
+      cout << "Hello" << endl;
+    }
+};
+#endif
+
+
+
+Q2
+
+#include <iostream>
+using namespace std;
+
+enum seasons {winter = 1, spring, summer, fall};
+
+int main() {
+  
+  //DO NOT EDIT code below this line
+
+  seasons season1 = winter;
+  seasons season2 = spring;
+  seasons season3 = summer;
+  seasons season4 = fall;
+
+  cout << "Winter is the " << season1 << "st season of the year." << endl;
+  cout << "Spring is the " << season2 << "nd season of the year." << endl;
+  cout << "Summer is the " << season3 << "rd season of the year." << endl;
+  cout << "Fall is the " << season4 << "th season of the year." << endl;
+
+  //DO NOT EDIT code above this line
+  
+  return 0;
+  
+}
+
+
+
+Q3
+
+#include <iostream>
+using namespace std;
+
+struct Student {
+  string name = "Amy";
+  int age = 18;
+  string major = "Physics";
+};
+int main() {
+  
+  //DO NOT EDIT code below this line
+
+  Student amy;
+  cout << amy.name << endl;
+  cout << amy.age << endl;
+  cout << amy.major << endl;
+  
+  cout << endl;
+  
+  Student adam;
+  adam.name = "Adam";
+  adam.age = 19;
+  adam.major = "Computer Science";
+  cout << adam.name << endl;
+  cout << adam.age << endl;
+  cout << adam.major << endl;
+
+  //DO NOT EDIT code above this line
+  
+  return 0;
+  
+}
+
+
+
+Q4
+
+#include <iostream>
+using namespace std;
+
+class Person {
+  public:
+    static string name;
+  
+    static string GetName() {
+      return name;
+    }
+};
+
+//DO NOT EDIT code below this line
+
+string Person::name = "Name";
+
+int main() {
+  
+  Person::name = "Peter Parker";
+  cout << Person::GetName() << endl;
+  Person::name = "Tony Stark";
+  cout << Person::GetName() << endl;
+  
+  return 0;
+  
+}
+
+//DO NOT EDIT code above this line
+
+
+
+Q5
+
+
+#include <iostream>
+using namespace std;
+
+//DO NOT EDIT/////////////////////
+class Student {                 //
+  public:                       //
+    Student(string n, int id) { //
+      name = n;                 //
+      student_id = id;          //
+    }                           //
+//////////////////////////////////
+  
+      static bool CompareStudents(Student s1, Student s2) {
+      if ((s1.name == s2.name) &&
+          (s1.student_id == s2.student_id)) {
+        return true;
+      }
+      else {
+        return false;
+      }
+    }
+//DO NOT EDIT/////////
+  private:          //
+    string name;    //
+    int student_id; //
+};                  //
+//////////////////////
+
+int main() {
+  
+  //DO NOT EDIT code below this line
+
+  Student andy("Andy Ace", 123456);
+  Student anderson("Anderson Ace", 123456);
+  Student ace("Andy Ace", 123456);
+  Student andrew("Andy Ace", 234567);
+  cout << boolalpha;
+  cout << Student::CompareStudents(andy, anderson) << endl;
+  cout << Student::CompareStudents(andy, ace) << endl;
+  cout << Student::CompareStudents(andy, andrew) << endl;
+
+  //DO NOT EDIT code above this line
+  
+  return 0;
+  
+}
+
